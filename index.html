@@ -1,800 +1,648 @@
-
-<!DOCTYPE html><html lang="en">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.33.1" theme-name="Stellar" theme-version="1.33.1">
-  
-  
-  <meta name="generator" content="Hexo 7.3.0">
-  <meta http-equiv='x-dns-prefetch-control' content='on' />
-  
-  <meta name="renderer" content="webkit">
-  <meta name="force-rendering" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-  <meta name="HandheldFriendly" content="True" >
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
-  <meta name="theme-color" content="#f9fafb">
-  <title>Hexo</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-  
-    <meta property="og:type" content="website">
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/">
+<meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-  
-  
-  
-  
 
-  <!-- feed -->
-  
-
-  <link rel="stylesheet" href="/css/main.css?v=1.33.1">
+<link rel="canonical" href="http://example.com/">
 
 
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'en'
+  };
+</script>
+
+  <title>Hexo</title>
   
 
-  
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Website","@id":"http://example.com","author":{"@type":"Person","name":"John Doe","sameAs":[]},"name":"Hexo","description":"","url":"http://example.com"}</script>
-  
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
 </head>
-<body>
 
-<div class="l_body index" id="start" layout="undefined" type="undefined" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
 
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
 
-<header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="undefined" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main">Hexo</div></a></div></header>
+  <div class="site-meta">
 
-<div class="nav-area">
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Hexo</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
 
-<nav class="menu dis-select"></nav>
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
 </div>
-<div class="widgets">
-<div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="Search"></form><div id="search-result"></div><div class="search-no-result">No Results!</div></div>
 
-<widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">Recent Update</span></div><div class="widget-body fs14"><a class="item title" href="/2025/12/06/sqlmap%E5%8F%82%E6%95%B0/"><span class="title">sqlmap参数</span></a><a class="item title" href="/2025/12/06/hello-world/"><span class="title">Hello World</span></a></div></widget>
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
 </div>
+    </header>
 
-</div></aside><div class="l_main" id="main">
-
-<header class="header mobile-only"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="undefined" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main">Hexo</div></a></div></header>
-
-
-
-
-<div class="navbar top"><div class="navbar-blur"><div class="navbar-container"><nav class="post"><a class="active" href="/">Recent</a><a href="/archives/">Archives</a></nav></div></div></div>
-<div class="post-list post"><a class="post-card post" href="/2025/12/06/sqlmap%E5%8F%82%E6%95%B0/">
-<article class="md-text"><h2 class="post-title">sqlmap参数</h2><div class="excerpt"><p>sqlmap参数详解sqlmap参数详解
-选项
--h， –help 查看帮助，没什么好说的
--hh 查看全部的帮助
-–version 查看版本
--v 显示信息的级别，一共有六级：0：只显示python 错误和一些严重信息;1：显示基本信息（默认）;2...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2025-12-06T11:39:48.000Z">2025-12-06</time></span></div></article>
-</a><a class="post-card post" href="/2025/12/06/hello-world/">
-<article class="md-text"><h2 class="post-title">Hello World</h2><div class="excerpt"><p>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, yo...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2025-12-06T10:47:54.604Z">2025-12-06</time></span></div></article>
-</a></div>
-
-
-<footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">John Doe</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.33.1">Stellar 1.33.1</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
-</div></footer>
-<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
-</aside><div class='float-panel'>
-  <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
-  </button>
-  <button type='button' style='display:none' class='mobile-only leftbar-toggle mobile' onclick='sidebar.leftbar()'>
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg>
-  </button>
-</div>
-</div><div class="scripts">
-
-
-<script type="text/javascript">
-  window.canonical = {"originalHost":null,"officialHosts":["localhost"],"encoded":""};
-  const ctx = {
-    date_suffix: {
-      just: `Just`,
-      min: `minutes ago`,
-      hour: `hours ago`,
-      day: `days ago`,
-    },
-    root : `/`,
-    tag_plugins: {
-      chat: Object.assign({"api":"https://siteinfo.listentothewind.cn/api/v1"}),
-    }
-  };
-
-  // required plugins (only load if needs)
-  if (`local_search`) {
-    ctx.search = {};
-    ctx.search.service = `local_search`;
-    if (ctx.search.service == 'local_search') {
-      let service_obj = Object.assign({}, `{"field":"all","path":"/search.json","content":true,"skip_search":null,"sort":"-date"}`);
-      ctx.search[ctx.search.service] = service_obj;
-    }
-  }
-  const def = {
-    avatar: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/3442075.svg`,
-    cover: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/cover/76b86c0226ffd.svg`,
-    loading: `https://api.iconify.design/eos-icons:three-dots-loading.svg?color=%231cd0fd`,
-  };
-  const deps = {
-    jquery: `https://gcore.jsdelivr.net/npm/jquery@3.7/dist/jquery.min.js`,
-    marked: `https://gcore.jsdelivr.net/npm/marked@13.0/lib/marked.umd.min.js`,
-    lazyload: `/%5Bobject%20Object%5D`
-  }
-  
-
-</script>
-
-<script type="text/javascript">
-  
-  function RunItem() {
-    this.list = []; // 存放回调函数
-    this.start = () => {
-      for (var i = 0; i < this.list.length; i++) {
-        this.list[i].run();
-      }
-    };
-    this.push = (fn, name, setRequestAnimationFrame = true) => {
-      let myfn = fn
-      if (setRequestAnimationFrame) {
-        myfn = () => {
-          utils.requestAnimationFrame(fn)
-        }
-      }
-      var f = new Item(myfn, name);
-      this.list.push(f);
-    };
-    this.remove = (name) => {
-      for (let index = 0; index < this.list.length; index++) {
-        const e = this.list[index];
-        if (e.name == name) {
-          this.list.splice(index, 1);
-        }
-      }
-    }
-    // 构造一个可以run的对象
-    function Item(fn, name) {
-      // 函数名称
-      this.name = name || fn.name;
-      // run方法
-      this.run = () => {
-        try {
-          fn()
-        } catch (error) {
-          console.log(error);
-        }
-      };
-    }
-  }
-
-  const utils = {
-    // 懒加载 css https://github.com/filamentgroup/loadCSS
-    css: (href, before, media, attributes) => {
-      var doc = window.document;
-      var ss = doc.createElement("link");
-      var ref;
-      if (before) {
-        ref = before;
-      } else {
-        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
-        ref = refs[refs.length - 1];
-      }
-      var sheets = doc.styleSheets;
-      if (attributes) {
-        for (var attributeName in attributes) {
-          if (attributes.hasOwnProperty(attributeName)) {
-            ss.setAttribute(attributeName, attributes[attributeName]);
-          }
-        }
-      }
-      ss.rel = "stylesheet";
-      ss.href = href;
-      ss.media = "only x";
-      function ready(cb) {
-        if (doc.body) {
-          return cb();
-        }
-        setTimeout(function () {
-          ready(cb);
-        });
-      }
-      ready(function () {
-        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
-      });
-      var onloadcssdefined = function (cb) {
-        var resolvedHref = ss.href;
-        var i = sheets.length;
-        while (i--) {
-          if (sheets[i].href === resolvedHref) {
-            return cb();
-          }
-        }
-        setTimeout(function () {
-          onloadcssdefined(cb);
-        });
-      };
-      function loadCB() {
-        if (ss.addEventListener) {
-          ss.removeEventListener("load", loadCB);
-        }
-        ss.media = media || "all";
-      }
-      if (ss.addEventListener) {
-        ss.addEventListener("load", loadCB);
-      }
-      ss.onloadcssdefined = onloadcssdefined;
-      onloadcssdefined(loadCB);
-      return ss;
-    },
-
-    js: (src, opt) => new Promise((resolve, reject) => {
-      var script = document.createElement('script');
-      if (src.startsWith('/')) {
-        src = ctx.root + src.substring(1);
-      }
-      script.src = src;
-      if (opt) {
-        for (let key of Object.keys(opt)) {
-          script[key] = opt[key]
-        }
-      } else {
-        // 默认异步，如果需要同步，第二个参数传入 {} 即可
-        script.async = true
-      }
-      script.onerror = reject
-      script.onload = script.onreadystatechange = function () {
-        const loadState = this.readyState
-        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-        script.onload = script.onreadystatechange = null
-        resolve()
-      }
-      document.head.appendChild(script)
-    }),
-
-    jq: (fn) => {
-      if (typeof jQuery === 'undefined') {
-        utils.js(deps.jquery).then(fn)
-      } else {
-        fn()
-      }
-    },
-
-    onLoading: (el) => {
-      if (el) {
-        $(el).append('<div class="loading-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" stroke-opacity=".3" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="1.3s" values="60;0"/></path><path stroke-dasharray="15" stroke-dashoffset="15" d="M12 3C16.9706 3 21 7.02944 21 12"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="15;0"/><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></path></g></svg></div>');
-      }
-    },
-    onLoadSuccess: (el) => {
-      if (el) {
-        $(el).find('.loading-wrap').remove();
-      }
-    },
-    onLoadFailure: (el) => {
-      if (el) {
-        $(el).find('.loading-wrap svg').remove();
-        $(el).find('.loading-wrap').append('<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" d="M12 3L21 20H3L12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M12 10V14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="6;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.4s" values="0;1"/></circle></svg>');
-        $(el).find('.loading-wrap').addClass('error');
-      }
-    },
-    request: (el, url, callback, onFailure) => {
-      const maxRetry = 3;
-      let retryCount = 0;
-
-      return new Promise((resolve, reject) => {
-        const load = () => {
-          utils.onLoading?.(el);
-
-          let timedOut = false;
-          const timeout = setTimeout(() => {
-            timedOut = true;
-            console.warn('[request] 超时:', url);
-
-            if (++retryCount >= maxRetry) {
-              utils.onLoadFailure?.(el);
-              onFailure?.();
-              reject('请求超时');
-            } else {
-              setTimeout(load, 1000);
-            }
-          }, 5000);
-
-          fetch(url).then(resp => {
-            if (timedOut) return;
-            clearTimeout(timeout);
-
-            if (!resp.ok) throw new Error('响应失败');
-            return resp;
-          }).then(data => {
-            if (timedOut) return;
-            utils.onLoadSuccess?.(el);
-            callback(data);
-            resolve(data);
-          }).catch(err => {
-            clearTimeout(timeout);
-            console.warn('[request] 错误:', err);
-
-            if (++retryCount >= maxRetry) {
-              utils.onLoadFailure?.(el);
-              onFailure?.();
-              reject(err);
-            } else {
-              setTimeout(load, 1000);
-            }
-          });
-        };
-
-        load();
-      });
-    },
-    requestWithoutLoading: (url, options = {}, maxRetry = 2, timeout = 5000) => {
-      return new Promise((resolve, reject) => {
-        let retryCount = 0;
-
-        const tryRequest = () => {
-          let timedOut = false;
-          const timer = setTimeout(() => {
-            timedOut = true;
-            if (++retryCount > maxRetry) reject('timeout');
-            else tryRequest();
-          }, timeout);
-
-          fetch(url, options)
-            .then(resp => {
-              clearTimeout(timer);
-              if (!resp.ok) throw new Error('bad response');
-              resolve(resp);
-            })
-            .catch(err => {
-              clearTimeout(timer);
-              if (++retryCount > maxRetry) reject(err);
-              else setTimeout(tryRequest, 500);
-            });
-        };
-
-        tryRequest();
-      });
-    },
-    /********************** requestAnimationFrame ********************************/
-    // 1、requestAnimationFrame 会把每一帧中的所有 DOM 操作集中起来，在一次重绘或回流中就完成，并且重绘或回流的时间间隔紧紧跟随浏览器的刷新频率，一般来说，这个频率为每秒60帧。
-    // 2、在隐藏或不可见的元素中，requestAnimationFrame 将不会进行重绘或回流，这当然就意味着更少的的 cpu，gpu 和内存使用量。
-    requestAnimationFrame: (fn) => {
-      if (!window.requestAnimationFrame) {
-        window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame;
-      }
-      window.requestAnimationFrame(fn)
-    },
-    dark: {},
-  };
-
-  // utils.dark.mode 当前模式 dark or light
-  // utils.dark.toggle() 暗黑模式触发器
-  // utils.dark.push(callBack[,"callBackName"]) 传入触发器回调函数
-  utils.dark.method = {
-    toggle: new RunItem(),
-  };
-  utils.dark = Object.assign(utils.dark, {
-    push: utils.dark.method.toggle.push,
-  });
-</script>
-<script>
-  const sidebar = {
-    leftbar: () => {
-      if (l_body) {
-        l_body.toggleAttribute('leftbar');
-        l_body.removeAttribute('rightbar');
-      }
-    },
-    rightbar: () => {
-      if (l_body) {
-        l_body.toggleAttribute('rightbar');
-        l_body.removeAttribute('leftbar');
-      }
-    },
-    dismiss: () => {
-      if (l_body) {
-        l_body.removeAttribute('leftbar');
-        l_body.removeAttribute('rightbar');
-      }
-    },
-    toggleTOC: () => {
-      document.querySelector('#data-toc').classList.toggle('collapse');
-    }
-  }
-</script>
-<script type="text/javascript">
-  (() => {
-    const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
-    for (const tagSwitcher of tagSwitchers) {
-      tagSwitcher.addEventListener('click', (e) => {
-        const parent = e.target.closest('.tag-subtree.parent-tag')
-        parent.classList.toggle('expanded')
-        e.preventDefault()
-      })
-    }
-
-    // Get active tag from query string, then activate it.
-    const urlParams = new URLSearchParams(window.location.search)
-    const activeTag = urlParams.get('tag')
-    if (activeTag) {
-      let tag = document.querySelector(`.tag-subtree[data-tag="${activeTag}"]`)
-      if (tag) {
-        tag.querySelector('a').classList.add('active')
-        
-        while (tag) {
-          tag.classList.add('expanded')
-          tag = tag.parentElement.closest('.tag-subtree.parent-tag')
-        }
-      }
-    }
-  })()
-</script>
-
-<script async src="https://gcore.jsdelivr.net/npm/vanilla-lazyload@19.1/dist/lazyload.min.js"></script>
-<script>
-  // https://www.npmjs.com/package/vanilla-lazyload
-  // Set the options globally
-  // to make LazyLoad self-initialize
-  window.lazyLoadOptions = {
-    elements_selector: ".lazy",
-    callback_loaded: (el) => {
-      el.classList.add('loaded');
-      const wrapper = el.closest('.lazy-box');
-      const icon = wrapper?.querySelector('.lazy-icon');
-      if (icon) icon.remove();
-    }
-  };
-  // Listen to the initialization event
-  // and get the instance of LazyLoad
-  window.addEventListener(
-    "LazyLoad::Initialized",
-    function (event) {
-      window.lazyLoadInstance = event.detail.instance;
-    },
-    false
-  );
-  document.addEventListener('DOMContentLoaded', function () {
-    window.lazyLoadInstance?.update();
-  });
-
-  window.wrapLazyloadImages = (container) => {
-    if (typeof container === 'string') {
-      container = document.querySelector(container);
-    }
-    if (!container) return;
     
-    const images = container.querySelectorAll('img');
-    images.forEach((img) => {
-      if (img.classList.contains('lazy')) return;
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
 
-      const src = img.getAttribute('src');
-      if (!src) return;
 
-      const wrapper = document.createElement('div');
-      wrapper.className = 'lazy-box';
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
 
-      const newImg = img.cloneNode();
-      newImg.removeAttribute('src');
-      newImg.setAttribute('data-src', src);
-      newImg.classList.add('lazy');
-
-      const icon = document.createElement('div');
-      icon.className = 'lazy-icon';
-      if (def.loading) {
-        icon.style.backgroundImage = `url("${def.loading}")`;
-      }
-
-      wrapper.appendChild(newImg);
-      wrapper.appendChild(icon);
-
-      img.replaceWith(wrapper);
-    });
-
-    // 通知 LazyLoad 更新
-    if (window.lazyLoadInstance?.update) {
-      window.lazyLoadInstance.update();
-    }
-  }
+          <div class="content index posts-expand">
+            
+      
   
-</script>
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/12/06/sqlmap%E5%8F%82%E6%95%B0/">
 
-<!-- required -->
-<script src="/js/main.js?v=1.33.1" defer></script>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
 
-<script type="text/javascript">
-  const applyTheme = (theme) => {
-    if (theme === 'auto') {
-      document.documentElement.removeAttribute('data-theme')
-    } else {
-      document.documentElement.setAttribute('data-theme', theme)
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/12/06/sqlmap%E5%8F%82%E6%95%B0/" class="post-title-link" itemprop="url">sqlmap参数</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2025-12-06 19:39:48 / Modified: 20:04:38" itemprop="dateCreated datePublished" datetime="2025-12-06T19:39:48+08:00">2025-12-06</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="sqlmap参数详解"><a href="#sqlmap参数详解" class="headerlink" title="sqlmap参数详解"></a>sqlmap参数详解</h1><p><strong>sqlmap参数详解</strong></p>
+<h2 id="选项"><a href="#选项" class="headerlink" title="选项"></a><strong>选项</strong></h2><ol>
+<li>-h， –help 查看帮助，没什么好说的</li>
+<li>-hh 查看全部的帮助</li>
+<li>–version 查看版本</li>
+<li>-v 显示信息的级别，一共有六级：0：只显示python 错误和一些严重信息;1：显示基本信息（默认）;2：显示调试信息;3：显示注入过程的payload;4：显示http请求包;5：显示http响应头;7：显示http相应页面。</li>
+</ol>
+<h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a><strong>目标</strong></h2><ol>
+<li>-d 直接连目标后端接数据库，而不是使用sql注入漏洞，直接通过目标的侦听端口连接，当然需要有目标数据库的账号名和密码。例：-d “<a href="mysql://user:password@192.168.75.128:3389/databasename">mysql:&#x2F;&#x2F;user:password@192.168.75.128:3389/databasename</a>” –dbs 查询非常快。</li>
+<li>-u 指定一个url连接，url中必须有？xx&#x3D;xx 才行（最常用的参数）例：-u “<a target="_blank" rel="noopener" href="http://www.abc.com/index.php?id=1">www.abc.com/index.php?id=1</a>“</li>
+<li>-l 后接一个log文件，可以是burp等的代理的log文件，之后sqlmap会扫描log中的所有记录。例： -l log.txt</li>
+<li>-x 站点地图，提交给sql一个XML文件。</li>
+<li>-m 后接一个txt文件，文件中是多个URL，sqlmap会自动化的检测其中的所有URL。例： -m 目标.txt</li>
+<li>-r 可以将一个post请求方式的数据包保存在一个txt中，sqlmap会通过post方式检测目标。例： -r post.txt</li>
+<li>-g 使用google引擎搜索类似的网址，并且多目标检测。例： -g “inurl：\”.php？id&#x3D;1\“” \是转义</li>
+<li>-c 将使用的命令写在一个文件中，让sqlmap执行文件中的命令，我们可以用–save命令将配置写入文件。</li>
+</ol>
+<h2 id="请求"><a href="#请求" class="headerlink" title="请求"></a><strong>请求</strong></h2><ol>
+<li>–method&#x3D;METHOD 指定是get方法还是post方法。例： –method&#x3D;GET –method&#x3D;POST</li>
+<li>–data&#x3D;DATA 指明参数是哪些。例：-u “<a target="_blank" rel="noopener" href="http://www.abc.com/index.php?id=1">www.abc.com/index.php?id=1</a>” –data&#x3D;“name&#x3D;1&amp;pass&#x3D;2”</li>
+<li>–param-del&#x3D;PARA. 指明使用的变量分割符。例： -u “<a target="_blank" rel="noopener" href="http://www.abc.com/index.php?id=1">www.abc.com/index.php?id=1</a>” –data&#x3D;“name&#x3D;1;pass&#x3D;2” –param-del&#x3D;“;”</li>
+<li>–cookie&#x3D;COOKIE 指定测试时使用的cookie，通常在一些需要登录的站点会使用。例： -u “<a target="_blank" rel="noopener" href="http://www.abc.com/index.php?id=1">www.abc.com/index.php?id=1</a>” –cookie&#x3D;“a&#x3D;1;b&#x3D;2”</li>
+<li>–cookie-del&#x3D;COO..和前面的 –param-del&#x3D;PARA. 类似，就是指明分割cookie的字符。</li>
+<li>–load-cookies&#x3D;L..从包含Netscape &#x2F; wget格式的cookie的文件中加载cookie。</li>
+<li>–drop-set-cookie 默认情况下，sqlmap是开启set-cookie功能的，也就是当收到一个含有set-cookie的http包的时候，下次sql会使用新的cookie进行发包，如果使用这条命令，就会关闭这个功能。在level&gt;&#x3D;2时会检测cookie注入。</li>
+<li>–user-agent&#x3D;AGENT 指定一个user-agent的值进行测试。例： –user-agent&#x3D;“aaaaaaa” 默认情况下，sqlmap会使用自己的user-agent进行测试（所以很多服务器发现user-agent是sqlmap的数据包直接认为是入侵），sqlmap自己的user-agent是：sqlmap&#x2F;1.0-dev-nongit-201603020a89（<a target="_blank" rel="noopener" href="http://sqlmap.org/">http://sqlmap.org</a>)</li>
+<li>–random-agent 使用随机user-agent进行测试。sqlmap有一个文件中储存了各种各样的user-agent，文件在sqlmap&#x2F;txt&#x2F;user-agent.txt 在level&gt;&#x3D;3时会检测user-agent注入。</li>
+<li>–host&#x3D;HOST 指定 http包中的host头参数。例： –host&#x3D;“aaaaaa” 在level&gt;&#x3D;5时才会检查host头注入。\n是换行</li>
+<li>–referer&#x3D;REFERER 指定 http包中的refere字段。例： –refere&#x3D;“aaaaa” 在level&gt;&#x3D;3时才会检测refere注入。</li>
+<li>-H –headers 额外的header头，每个占一行。例：–headers&#x3D;“host：<a target="_blank" rel="noopener" href="http://www.a.com/">www.a.com</a>\nUser-Agent：yuangh”</li>
+<li>–headers&#x3D;HEADERS 跟上边一样，再举一个例子： –headers&#x3D;“Accept-Language： fr\nETag： 123” 注意所有构造http包的部分均区分大小写</li>
+<li>–身份验证类型&#x3D;身份验证。基于http身份验证的种类。例： –auth-type Basic&#x2F;Digest&#x2F;NTLM 一共有三种认证方式。</li>
+<li>–auth-cred&#x3D;AUTH..使用的认证，例： –auth-type Basic –auth-cred “user：password”</li>
+<li>–auth-file&#x3D;AUTH..使用.PEM文件中的认证。例：–auth-file&#x3D;“AU.PEM“ 少见。</li>
+<li>–忽略代码&#x3D;IG..无视HTTP状态码。例： –忽略代码&#x3D;401</li>
+<li>–ignore-proxy 无视本地的代理，有时候机器会有最基本的代理配置，在扫描本地网段的时候会很麻烦，使用这个参数可以忽略代理设置。</li>
+<li>–ignore-redirects 无视http重定向，比如登录成功会跳转到其他网页，可使用这个忽略掉。</li>
+<li>–ignore-timeouts 忽略连接超时。</li>
+<li>–proxy&#x3D;PROXY 指定一个代理。例： –proxy&#x3D;“127.0.0.1：8087” 使用GoAgent代理。</li>
+<li>–proxy-cred&#x3D;PRO..代理需要的认证。例： –proxy&#x3D;“name：password”</li>
+<li>–proxy-file&#x3D;PRO..从一个文件加载代理的认证。</li>
+<li>–tor 使用tor匿名网络，不懂。</li>
+<li>–tor-port&#x3D;TORPORT 设置默认的 tor代理端口，不懂+2。</li>
+<li>–tor-type&#x3D;TORTYPE 设置tor代理种类，（HTTP， SOCKS4 or SOCKS5 （默认）），不懂+3。</li>
+<li>–check-tor 检查是否正确使用Tor，不懂+4。</li>
+<li>–delay&#x3D;DELAY 每次发包的延迟时间，单位为秒，浮点数。例：–delay 2.5 有时候频繁的发包会引起服务器注意，需要使用delay降低发包频率。</li>
+<li>–timeout&#x3D;TIMEOUT 请求超时的时间，单位为秒，浮点数，默认30s。</li>
+<li>–retries&#x3D;RETRY 超时重连次数，默认三次。例： –retries&#x3D;5</li>
+<li>–randomize&#x3D;RPARAM 参数的长度，类型与输入值保持一致的前提下，每次请求换参数的值。有时候反复的提交同一个参数会引起服务器注意。</li>
+<li>–safe-url&#x3D;SAFEURL 用法和-u类似，就是一个加载测试url的方法，但额外功能是防止有时候时间长了不通讯服务器会销毁session，开启这种功能会隔一段时间发一个包保持session。</li>
+<li>–安全帖子&#x3D;安全..和上面的一样，只是使用post的方式发送数据。</li>
+<li>–安全要求&#x3D;更安全。和上面的一样，只是从一个文件获得目标。</li>
+<li>–安全频率&#x3D;安全。频繁的发送错误的请求，服务器也会销毁session或者其他惩罚方式，开启这个功能之后，发几次错的就会发一次对的。通常用于盲注。</li>
+<li>–skip-urlencode 跳过url编码，毕竟不排除有的奇葩网站url不遵守RFC标准编码。</li>
+<li>–csrf-token&#x3D;CSR..保持csrf令牌的令牌。</li>
+<li>–csrf-url&#x3D;CSRFURL 访问url地址获取csrf的token。</li>
+<li>–force-ssl 强制使用SSL。</li>
+<li>–hpp 使用http参数污染，通常http传递参数会以名称-值对的形势出现，通常在一个请求中，同样名称的参数只会出现一次。但是在HTTP协议中是允许同样名称的参数出现多次的，就可能造成参数篡改。</li>
+<li>–eval&#x3D;EVALCODE 执行一段指定的python代码。例： -u “<a target="_blank" rel="noopener" href="http://www.abc.com/index.php?id=1">www.abc.com/index.php?id=1</a>” –eval&#x3D;“import hashlib;hash&#x3D;hashlib.md5（id）.hexdigest（）”</li>
+</ol>
+<h2 id="优化"><a href="#优化" class="headerlink" title="优化"></a><strong>优化</strong></h2><ol>
+<li>-o 开启下面三项（–predict-output,–keep-alive， –null-connection）</li>
+<li>–predict-output 预设的输出，可以理解为猜一个表存在不存在，根据服务器返回值来进行判断，有点类似暴力破解，但和暴力破解又不同，这个是一个范围性的暴力破解，一次的缩小范围。</li>
+<li>–keep-alive 使用http（s）长链接，性能更好，避免重复建立链接的开销，但占用服务器资源，而且与–proxy不兼容。</li>
+<li>–null-connection 只看页面返回的大小值，而不看具体内容，通常用于盲注或者布尔的判断，只看对错，不看内容。</li>
+<li>–threads&#x3D;THREADS 开启多线程，默认为1，最大10。和 –predict-output 不兼容。</li>
+</ol>
+<h2 id="注射"><a href="#注射" class="headerlink" title="注射"></a><strong>注射</strong></h2><ol>
+<li>-p TESTPARAMETER 知道测试的参数，使用这个的话–level 参数就会失效。例： -p “user-agent，referre”</li>
+<li>–skip&#x3D;SKIP 排除指定的参数。例： –level 5 –skip&#x3D;“id，user-agent”</li>
+<li>–skip-static 跳过测试静态的参数。</li>
+<li>–参数排除&#x3D;..使用正则表达式跳过测试参数。</li>
+<li>–dbms&#x3D;DBMS 指定目标数据库类型。例： –dbms&#x3D;“MySQL&lt;5.0&gt;” Oracle&lt;11i&gt; Microsoft SQL Server&lt;2005&gt;</li>
+<li>–dbms-cred&#x3D;DBMS..数据库的认证。利： –dbms-cred&#x3D;“name：password”</li>
+<li>–os&#x3D;OS 指定目标操作系统。例： –os&#x3D;“Linux&#x2F;Windows”</li>
+<li>–invalid-bignum 通常情况下sqlmap使用负值使参数失效，比如id&#x3D;1-&gt;id&#x3D;-1，开启这个之后使用大值使参数失效，如id&#x3D;9999999999。</li>
+<li>–invalid-logical 使用逻辑使参数失效，如id&#x3D;1 and 1&#x3D;2。</li>
+<li>–invalid-string 使用随机字符串使参数失效。</li>
+<li>–no-cast 获取数据时，sqlmap会将所有数据转换成字符串，并用空格代替null。</li>
+<li>–no-escape 用于混淆和避免出错，使用单引号的字符串的时候，有时候会被拦截，sqlmap使用char（）编码。例如：选择“a”-&gt;选择char（97）。</li>
+<li>–prefix&#x3D;PREFIX 指定payload前缀，有时候我们猜到了服务端代码的闭合情况，需要使用这个来指定一下。例： -u “<a target="_blank" rel="noopener" href="http://www.abc.com/index?id=1">www.abc.com/index?id=1</a>” -p id –prefix“）” –后缀 “and （’abc’&#x3D;’abc”</li>
+<li>–suffix&#x3D;SUFFIX 指定后缀，例子同上。</li>
+<li>–tamper&#x3D;TAMPER 使用sqlmap自带的篡改，或者自己写的篡改，来混淆有效载荷，通常用来绕过waf和ips。</li>
+</ol>
+<h2 id="检波"><a href="#检波" class="headerlink" title="检波"></a><strong>检波</strong></h2><ol>
+<li>–level&#x3D;LEVEL 设置测试的等级（1-5，默认为1）lv2：cookie;LV3：用户代理，推荐;lv5：host 在sqlmap&#x2F;xml&#x2F;payloads文件内可以看见各个level发送的payload</li>
+<li>–risk&#x3D;RISK 风险（1-4，默认1）升高风险等级会增加数据被篡改的风险。risk 2：基于事件的测试;risk 3：or语句的测试;risk 4：update的测试</li>
+<li>–string&#x3D;STRING 在基于布尔的注入时，有的时候返回的页面一次一个样，需要我们自己判断出标志着返回正确页面的标志，会根据页面的返回内容这个标志（字符串）判断真假，可以使用这个参数来制定看到什么字符串就是真。</li>
+<li>–not-string&#x3D;NOT..同理，这个参数代表看不见什么才是真。</li>
+<li>–regexp&#x3D;REGEXP 通常和上面两种连用，使用正则表达式来判断。</li>
+<li>–code&#x3D;CODE 也是在基于布尔的注入时，只不过指定的是http返回码。</li>
+<li>–text-only 同上，只不过指定的是页面里的一段文本内容。</li>
+<li>–title 同上，只不过指定的是页面的标题。</li>
+</ol>
+<h2 id="技术"><a href="#技术" class="headerlink" title="技术"></a><strong>技术</strong></h2><ol>
+<li>–technique&#x3D;TECH 指定所使用的技术（B：布尔盲注;E：报错注入;U：联合查询注入;S:文件系统，操作系统，注册表相关注入;T：时间盲注;默认全部使用）</li>
+<li>–time-sec&#x3D;TIMESEC 在基于时间的盲注的时候，指定判断的时间，单位秒，默认5秒。</li>
+<li>–union-cols&#x3D;UCOLS 联合查询的尝试列数，随级增加，最多支持50列。例： –Union-cols 6-9</li>
+<li>–union-char&#x3D;UCHAR 联合查询默认使用的占列的是null，有些情况null可能会失效，可以手动指定其他的。例： –union-char 1</li>
+<li>–union-from&#x3D;UFROM 联合查询从之前的查询结果中选择列，和上面的类似。</li>
+<li>–dns-domain&#x3D;DNS.. 如果你控制了一台dns服务器，使用这个可以提高效率。例： –DNS-domain <a target="_blank" rel="noopener" href="http://123.com/">123.com</a></li>
+<li>–二阶&#x3D;S..在这个页面注入的结果，在另一个页面显示。例： –二阶 1.1.1.1&#x2F;b.php</li>
+</ol>
+<h2 id="指纹"><a href="#指纹" class="headerlink" title="指纹"></a><strong>指纹</strong></h2><ol>
+<li>-f， –fingerprint 指纹信息，返回DBMS，操作系统，架构，补丁等信息。</li>
+</ol>
+<h2 id="列举"><a href="#列举" class="headerlink" title="列举"></a><strong>列举</strong></h2><ol>
+<li>-a， –all 查找全部，很暴力。直接用-a</li>
+<li>-b， –banner 查找数据库管理系统的标识。直接用-b</li>
+<li>–current-user 当前用户，常用，直接用–current-user</li>
+<li>–current-db 当前数据库，常用，直接用–current-db</li>
+<li>–主机名主机名，直接用–主机名</li>
+<li>–是-dba</li>
+<li>–users 查询一共都有哪些用户，常用，直接用–users</li>
+<li>–password 查询用户密码的哈希，常用，直接用–password</li>
+<li>–特权查看特权，常用。例： –特权 -U 用户名 （CU 就是当前用户）</li>
+<li>–roles 查看一共有哪些角色（权限），直接用–roles</li>
+<li>–dbs 目标服务器中有什么数据库，常用，直接用–dbs</li>
+<li>–tables 目标数据库有什么表，常用，直接用–tables</li>
+<li>–columns 目标表中有什么列，常用，直接用–colums</li>
+<li>–schema 目标数据库数据库系统管理模式。</li>
+<li>–count 查询结果返回一个数字，即多少个。</li>
+<li>–dump 查询指定范围的全部数据。例： –dump -D admin -T admin -C 用户名</li>
+<li>–dump-all 查询全部数据。例： –dump-all –exclude-sysdbs</li>
+<li>–search 搜索列、表和&#x2F;或数据库名称。</li>
+<li>–comments 检索数据库的备注。</li>
+<li>-D DB 指定从某个数据库查询数据，常用。例： -D admindb</li>
+<li>-T TBL 指定从某个表查询数据，常用。例： -T 可管理性</li>
+<li>-C COL 指定从某个列查询数据，常用。例： -C 用户名</li>
+<li>-X EXCLUDE 指定数据库的标识符。</li>
+<li>-U USER 一个用户，通常和其他连用。例： –特权 -U 用户名 （CU 就是当前用户）</li>
+<li>–exclude-sysdbs 除了系统数据库。</li>
+<li>–pivot-column&#x3D;P..枢轴列名，不懂。</li>
+<li>–where&#x3D;DUMPWHERE 在dump表时使用where限制条件。</li>
+<li>–start&#x3D;LIMITSTART 设置一个起始，通常和–dunmp连用。</li>
+<li>–stop&#x3D;LIMITSTOP 同上，设置一个结束。</li>
+<li>–first&#x3D;FIRSTCHAR 以第一个查询输出的字符检索，不懂。</li>
+<li>–last&#x3D;LASTCHAR 以最后一个查询输出的字符检索，不懂+2。</li>
+<li>–sql-query&#x3D;QUERY 执行一个sql语句。</li>
+<li>–sql-shell 创建一个 sql 的 shell。</li>
+<li>–sql-file&#x3D;SQLFILE 执行一个给定文件中的sql语句</li>
+</ol>
+<h2 id="蛮-力"><a href="#蛮-力" class="headerlink" title="蛮 力"></a><strong>蛮 力</strong></h2><ol>
+<li>–common-tables 检查有没有记录表信息的公共表，比如mysql&gt;&#x3D;5.0会有一个information_schema库，储存了整个数据库的基本信息。有这个会方便很多。</li>
+<li>–common-columns 有没有记录公共列的表，比如Access就没有列信息。这两种方法都会使用暴力破解。</li>
+</ol>
+<h2 id="用户自定义函数注入"><a href="#用户自定义函数注入" class="headerlink" title="用户自定义函数注入"></a><strong>用户自定义函数注入</strong></h2><ol>
+<li>–udf-inject 编译共享库创建并上传至DB Server，生成UDF实现高级注入，不懂。</li>
+<li>–shared-lib&#x3D;SHLIB 同上，不懂。</li>
+</ol>
+<h2 id="文件系统访问"><a href="#文件系统访问" class="headerlink" title="文件系统访问"></a><strong>文件系统访问</strong></h2><ol>
+<li>–file-read&#x3D;RFILE 读取目标站点的一个文件。例： –file-read&#x3D;“&#x2F;etc&#x2F;password”</li>
+<li>–file-write&#x3D;WFILE 写入到目标站点的一个文件，通常和–sql-query 连用。例： –sql-query&#x3D;“select ”一句话木马“ –file-write&#x3D;”shell.php”</li>
+<li>–file-dest&#x3D;DFILE 同上，只是使用绝对路径写入。</li>
+</ol>
+<h2 id="操作系统访问"><a href="#操作系统访问" class="headerlink" title="操作系统访问"></a><strong>操作系统访问</strong></h2><ol>
+<li>–os-cmd&#x3D;OSCMD 执行一句系统命令。例： –os-shell&#x3D;“ipconfig -all”</li>
+<li>–os-shell 创建一个对方操作系统的shell，远程执行系统命令。直接用即可–os-shell</li>
+<li>–os-pwn 同上，获取一个OOB shell，meterpreter或VNC。</li>
+<li>–os-smbrelay 同上，一键获取一个OOB shell，meterpreter或VNC。</li>
+<li>–os-bof 利用缓冲区溢出。</li>
+<li>–priv-esc 自动提权，数据库进程用户权限提升。</li>
+<li>–msf-path&#x3D;MSFPATH Metasploit Framework本地的安装路径。</li>
+<li>–tmp-path&#x3D;TMPPATH 远程临时文件目录的绝对路径。</li>
+</ol>
+<h2 id="视窗注册表访问"><a href="#视窗注册表访问" class="headerlink" title="视窗注册表访问"></a><strong>视窗注册表访问</strong></h2><ol>
+<li>–reg-read 读一个Windows注册表。</li>
+<li>–reg-add 添加一个注册表。</li>
+<li>–reg-del 删一个注册表。</li>
+<li>–reg-key&#x3D;REGKEY 和之前连用，注册表key值。</li>
+<li>–reg-value&#x3D;REGVAL 和之前连用，注册表值。</li>
+<li>–reg-data&#x3D;REGDATA 和之前连用，注册表数据。</li>
+<li>–reg-type&#x3D;REGTYPE 和之前连用，注册表类别。</li>
+</ol>
+<h2 id="常规"><a href="#常规" class="headerlink" title="常规"></a><strong>常规</strong></h2><ol>
+<li>-s SESSIONFILE 从一个文件加载保存的session。</li>
+<li>-t TRAFFICFILE 记录流文件的保存位置。</li>
+<li>–batch 批处理，在检测过程中会问用户一些问题，使用这个参数统统使用默认值。</li>
+<li>–二进制字段&#x3D;..指定二进制结果的字段。</li>
+<li>–check-internet 在评估目标之前检查互联网连接，新功能。</li>
+<li>–crawl&#x3D;CRAWLDEPTH 从起始位置爬取的深度。例： –爬行&#x3D;3</li>
+<li>–crawl-exclude&#x3D;.. 除了哪些页面之外全部爬取。例： –crawl-exclude&#x3D;“<a target="_blank" rel="noopener" href="http://abc.com/logout.php">abc.com&#x2F;logout.php</a>“</li>
+<li>–csv-del&#x3D;CSVDEL 指定在CSV输出中使用的分隔字符。</li>
+<li>–charset&#x3D;CHARSET 强制字符串编码。例： –charset&#x3D;GBK</li>
+<li>–dump-format&#x3D;DU..转储数据的格式 ，有（CSV （默认）， HTML，SQLITE）三种。</li>
+<li>–编码&#x3D;编码。用于数据检索的字符编码。例： –编码&#x3D;GBK</li>
+<li>–eta 显示每个输出的预计到达时间 。</li>
+<li>–flush-session 清空会话信息。</li>
+<li>–forms 在目标URL上解析和测试表单。</li>
+<li>–fresh-query sqlmap每次查询都会讲查询结果储存在.sqlmap文件夹中，下次再有相同测查询会调用上次的查询结果，使用这个参数可以忽略文件中有的记载结果，重新查询。</li>
+<li>–har&#x3D;HARFILE 将所有http流量记录在一个har文件中。</li>
+<li>–hex dump非ascii字符时，将其编码为16进制，收到后解码还原。</li>
+<li>–output-dir&#x3D;OUT..输出结果至文件。例： –output-dir&#x3D;&#x2F;tmp</li>
+<li>–parse-errors 解析并显示报错信息。</li>
+<li>–save&#x3D;SAVECONFIG 将使用的命令保存到配置ini文件</li>
+<li>–scope&#x3D;SCOPE 和-l类似，只是这个可以过滤信息，使用正则表达式过滤网址。</li>
+<li>–测试过滤器&#x3D;TE..根据有效负载和&#x2F;或标题，不懂。</li>
+<li>–test-skip&#x3D;TEST..根据有效负载和&#x2F;或标题跳过测试，不懂+2。</li>
+<li>–更新更新sqlmap。</li>
+</ol>
+<h2 id="杂项"><a href="#杂项" class="headerlink" title="杂项"></a><strong>杂项</strong></h2><ol>
+<li>-z MNEMONICS 参数助记符，比较傻的一个功能。例： -z “bat，randoma，ign，tec&#x3D;BEU” 其实就是只要你写的字母可以唯一匹配其他参数，就可以生效。</li>
+<li>–alert&#x3D;ALERT 在找到SQL注入时运行主机OS命令。</li>
+<li>–answers&#x3D;ANSWERS 设置问题答案，在刚刚的–batch 可以跳过很多问题，但只是选择默认值，可以使用者个参数对特定问题设定特定答案。例： –回答 “extending&#x3D;N”</li>
+<li>–beep 在问题和&#x2F;或当SQL注入被发现时发出嘟嘟声。。。。。。。</li>
+<li>–cleanup 从SqLMAP特定的UDF和表中找数据库，类似暴力破解。</li>
+<li>–dependencies 检查缺少的Sql映射依赖项。</li>
+<li>–禁用着色 禁用控制台输出着色。</li>
+<li>–gpage&#x3D;GOOGLEPAGE 在指定页使用google结果，不懂。</li>
+<li>–identify-waf 识别目标的防火墙。</li>
+<li>–手机角色扮演手机。</li>
+<li>–offline 在脱机模式下工作。</li>
+<li>–purge-output 情况输出文件夹。</li>
+<li>–skip-waf 跳过WAF&#x2F;IPS&#x2F;IDS保护的启发式检测。</li>
+<li>–smart 有大量检测目标时候，只选择基于错误的检测。</li>
+<li>–sqlmap-shell 创建一个交互的sqlmap_shell，不懂。</li>
+<li>–tmp-dir&#x3D;TMPDIR 更改存储临时文件的本地目录。</li>
+<li>–web-root&#x3D;WEBROOT 设置Web服务器文档根目录。例： –web-root&#x3D;“&#x2F;var&#x2F;www”</li>
+<li>–巫师新手教程</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/12/06/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/12/06/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2025-12-06 18:47:54 / Modified: 18:41:01" itemprop="dateCreated datePublished" datetime="2025-12-06T18:47:54+08:00">2025-12-06</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
     }
-
-    // applyThemeToGiscus(theme)
-  }
-
-  // FIXME: 这会导致无法使用 preferred_color_scheme 以外的主题
-  const applyThemeToGiscus = (theme) => {
-    // theme = theme === 'auto' ? 'preferred_color_scheme' : theme
-    const cmt = document.getElementById('giscus')
-    if (cmt) {
-      // This works before giscus load.
-      cmt.setAttribute('data-theme', theme)
-    }
-
-    const iframe = document.querySelector('#comments > section.giscus > iframe')
-    if (iframe) {
-      // This works after giscus loaded.
-      const src = iframe.src
-      const newSrc = src.replace(/theme=[\w]+/, `theme=${theme}`)
-      iframe.src = newSrc
-    }
-  }
-
-  const switchTheme = () => {
-    // light -> dark -> auto -> light -> ...
-    const currentTheme = document.documentElement.getAttribute('data-theme')
-    let newTheme;
-    switch (currentTheme) {
-      case 'light':
-        newTheme = 'dark'
-        break
-      case 'dark':
-        newTheme = 'auto'
-        break
-      default:
-        newTheme = 'light'
-    }
-    applyTheme(newTheme)
-    window.localStorage.setItem('Stellar.theme', newTheme)
-    utils.dark.mode = newTheme === 'auto' ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : newTheme;
-    utils.dark.method.toggle.start();
-
-    const messages = {
-      light: `Switched to Light Mode`,
-      dark: `Switched to Dark Mode`,
-      auto: `Switched to Auto Mode`,
-    }
-    hud?.toast?.(messages[newTheme])
-  }
-
-  (() => {
-    // Apply user's preferred theme, if any.
-    const theme = window.localStorage.getItem('Stellar.theme')
-    if (theme !== null) {
-      applyTheme(theme)
-    } else {
-      utils.dark.mode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-    }
-    utils.dark.method.toggle.start();
-  })()
-</script>
-
-
-<!-- optional -->
-
-
-
-<script defer>
-  window.addEventListener('DOMContentLoaded', (event) => {
-    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"rating":{"js":"/js/services/rating.js","api":"https://star-vote.xaox.cc/api/rating"},"vote":{"js":"/js/services/vote.js","api":"https://star-vote.xaox.cc/api/vote"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"friends_and_posts":{"js":"/js/services/friends_and_posts.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"voice":{"js":"/js/plugins/voice.js"},"video":{"js":"/js/plugins/video.js"},"download-file":{"js":"/js/plugins/download-file.js"},"twikoo":{"js":"/js/services/twikoo_latest_comment.js"},"waline":{"js":"/js/services/waline_latest_comment.js"},"artalk":{"js":"/js/services/artalk_latest_comment.js"},"giscus":{"js":"/js/services/giscus_latest_comment.js"},"contributors":{"edit_this_page":{"_posts/":null,"wiki/stellar/":"https://github.com/xaoxuu/hexo-theme-stellar-docs/blob/main/"},"js":"/js/services/contributors.js"}}`));
-    for (let id of Object.keys(ctx.services)) {
-      const js = ctx.services[id].js;
-      if (id == 'siteinfo') {
-        ctx.cardlinks = document.querySelectorAll('a.link-card[cardlink]');
-        if (ctx.cardlinks?.length > 0) {
-          utils.js(js, { defer: true }).then(function () {
-            setCardLink(ctx.cardlinks);
-          });
-        }
-      } else if (id == 'voice') {
-        ctx.voiceAudios = document.querySelectorAll('.voice>audio');
-        if (ctx.voiceAudios?.length > 0) {
-          utils.js(js, { defer: true }).then(function () {
-            createVoiceDom(ctx.voiceAudios);
-          });
-        }
-      } else if (id == 'video') {
-        ctx.videos = document.querySelectorAll('.video>video');
-        if (ctx.videos?.length > 0) {
-          utils.js(js, { defer: true }).then(function () {
-            videoEvents(ctx.videos);
-          });
-        }
-      } else if (id == 'download-file') {
-        ctx.files = document.querySelectorAll('.file');
-        if (ctx.files?.length > 0) {
-          utils.js(js, { defer: true }).then(function () {
-            downloadFileEvent(ctx.files);
-          });
-        }
-      } else {
-        const els = document.getElementsByClassName(`ds-${id}`);
-        if (els?.length > 0) {
-          utils.jq(() => {
-            if (id == 'timeline' || 'memos' || 'marked') {
-              utils.js(deps.marked).then(function () {
-                utils.js(js, { defer: true });
-              });
-            } else {
-              utils.js(js, { defer: true });
-            }
-          });
-        }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
       }
     }
-
-    // chat iphone time
-    let phoneTimes = document.querySelectorAll('.chat .status-bar .time');
-
-    if (phoneTimes.length > 0) {
-      NowTime();
-      var date = new Date();
-      var sec = date.getSeconds();
-      var firstAdjustInterval = setInterval(firstAdjustTime, 1000 * (60 - sec));
-    }
-
-    function firstAdjustTime() {
-      NowTime();
-      clearInterval(firstAdjustInterval);
-      setInterval(NowTime, 1000 * 60);
-    }
-
-    function NowTime() {
-      for (let i = 0; i < phoneTimes.length; ++i) {
-        var timeSpan = phoneTimes[i];
-        var date = new Date();
-        var hour = date.getHours();
-        var min = date.getMinutes();
-        timeSpan.innerHTML = check(hour) + ":" + check(min);
-      }
-    };
-
-    function check(val) {
-      if (val < 10) {
-        return ("0" + val);
-      }
-      return (val);
-    }
-
-    // chat quote
-    const chat_quote_obverser = new IntersectionObserver((entries, observer) => {
-      entries.filter((entry) => { return entry.isIntersecting }).sort((a, b) => a.intersectionRect.y !== b.intersectionRect.y ? a.intersectionRect.y - b.intersectionRect.y : a.intersectionRect.x - b.intersectionRect.x).forEach((entry, index) => {
-          observer.unobserve(entry.target);
-          setTimeout(() => {
-            entry.target.classList.add('quote-blink');
-            setTimeout(() => {
-              entry.target.classList.remove('quote-blink');
-            }, 1000);
-          }, Math.max(100, 16) * (index + 1));
-        });
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
     });
-
-    var chatQuotes = document.querySelectorAll(".chat .talk .quote");
-    chatQuotes.forEach((quote) => {
-      quote.addEventListener('click', function () {
-        var chatCellDom = document.getElementById("quote-" + quote.getAttribute("quotedCellTag"));
-        if (chatCellDom) {
-          var chatDiv = chatCellDom.parentElement;
-          var mid = chatDiv.clientHeight / 2;
-          var offsetTop = chatCellDom.offsetTop;
-          if (offsetTop > mid - chatCellDom.clientHeight / 2) {
-            chatDiv.scrollTo({
-              top: chatCellDom.offsetTop - mid + chatCellDom.clientHeight / 2,
-              behavior: "smooth"
-            });
-          } else {
-            chatDiv.scrollTo({
-              top: 0,
-              behavior: "smooth"
-            });
-          }
-          chat_quote_obverser.observe(chatCellDom);
-        }
-      });
-    });
-  });
-</script>
-
-<script>
-  window.addEventListener('DOMContentLoaded', (event) => {
-    ctx.search = {
-      path: `/search.json`,
-    }
-    utils.js('/js/search/local-search.js', { defer: true });
-  });
-</script><script>
-  window.FPConfig = {
-    delay: 0,
-    ignoreKeywords: [],
-    maxRPS: 5,
-    hoverDelay: 25
-  };
-</script>
-<script defer src="https://gcore.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js"></script><script>
-  ctx.fancybox = {
-    selector: `.timenode p>img`,
-    css: `https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css`,
-    js: `https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js`
-  };
-  var selector = '[data-fancybox]:not(.error), .with-fancybox .atk-content img:not([atk-emoticon])';
-  if (ctx.fancybox.selector) {
-    selector += `, ${ctx.fancybox.selector}`
-  }
-  var needFancybox = document.querySelectorAll(selector).length !== 0;
-  if (!needFancybox) {
-    const memos = document.getElementsByClassName('ds-memos');
-    if (memos != undefined && memos.length > 0) {
-      needFancybox = true;
-    }
-    const fancybox = document.getElementsByClassName('with-fancybox');
-    if (fancybox != undefined && fancybox.length > 0) {
-      needFancybox = true;
-    }
-  }
-  if (needFancybox) {
-    utils.css(ctx.fancybox.css);
-    utils.js(ctx.fancybox.js, { defer: true }).then(function () {
-      Fancybox.bind(selector, {
-        hideScrollbar: false,
-        Thumbs: {
-          autoStart: false,
-        },
-        caption: (fancybox, slide) => {
-          return slide.triggerEl.alt || slide.triggerEl.dataset.caption || null
-        }
-      });
-    })
   }
 </script>
-<script>
-  window.addEventListener('DOMContentLoaded', (event) => {
-    const swiper_api = document.getElementById('swiper-api');
-    if (swiper_api != undefined) {
-      utils.css(`https://unpkg.com/swiper@10.3/swiper-bundle.min.css`);
-      utils.js(`https://unpkg.com/swiper@10.3/swiper-bundle.min.js`, { defer: true }).then(function () {
-        const effect = swiper_api.getAttribute('effect') || '';
-        var swiper = new Swiper('.swiper#swiper-api', {
-          slidesPerView: 'auto',
-          spaceBetween: 8,
-          centeredSlides: true,
-          effect: effect,
-          rewind: true,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-        });
-      })
-    }
-  });
-</script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    window.codeElements = document.querySelectorAll('.code');
-    if (window.codeElements.length > 0) {
-      ctx.copycode = {
-        default_text: `Copy`,
-        success_text: `Copied`,
-        toast: `复制成功`,
-      };
-      utils.js('/js/plugins/copycode.js');
-    }
-  });
-</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
 
 
-<!-- inject -->
 
-</div></body></html>
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
